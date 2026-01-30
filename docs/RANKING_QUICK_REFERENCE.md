@@ -154,7 +154,7 @@ def rank_content(user_id, candidates):
     for item in candidates:
         # Simple scoring
         recency = 1.0 / (1 + hours_since_post(item))
-        engagement = (item.likes + 2*item.retweets + 3*item.replies) / max(item.impressions, 1)
+        engagement = (item.likes + 2*item.retweets + 3*item.replies) / (1 + item.impressions)
         relevance = compute_relevance(user_id, item)
         
         score = 0.3*recency + 0.4*engagement + 0.3*relevance
