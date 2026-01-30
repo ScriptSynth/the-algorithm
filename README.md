@@ -2,6 +2,16 @@
 
 X's Recommendation Algorithm is a set of services and jobs that are responsible for serving feeds of posts and other content across all X product surfaces (e.g. For You Timeline, Search, Explore, Notifications). For an introduction to how the algorithm works, please refer to our [engineering blog](https://blog.x.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm).
 
+## 📖 New: Algorithm Optimization Guide
+
+Want to understand how to optimize your tweets and account for maximum visibility? Check out our **[Twitter Algorithm Optimization Guide](docs/TWITTER_ALGORITHM_OPTIMIZATION_GUIDE.md)** - a comprehensive analysis of how the algorithm ranks tweets, calculates user reputation (TweepCred), and determines content visibility. This guide includes:
+
+- How tweet ranking actually works (engagement metrics, weights, scoring)
+- TweepCred calculation and the hidden follower/following ratio penalty
+- Actionable tips to increase tweet visibility and go viral
+- What signals hurt your account and how to avoid them
+- Advanced techniques from source code analysis
+
 ## Architecture
 
 Product surfaces at X are built on a shared set of data, models, and software frameworks. The shared components included in this repository are listed below:
